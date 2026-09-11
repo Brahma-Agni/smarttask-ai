@@ -52,12 +52,6 @@ Preferred:
 
 - Google Gemini
 
-Alternative:
-
-- OpenAI
-
-Do not integrate multiple AI providers unless explicitly requested.
-
 ---
 
 ## Architecture
@@ -454,62 +448,29 @@ After making a change:
 6. Explain the request flow in beginner-friendly terms.
 
 ---
+## Codex Working Style
 
-## Learning Requirement
+Before changes:
+1. Read relevant existing code.
+2. Read implementation.md for the planned scope.
+3. Make the smallest change required.
+4. Preserve existing working behavior.
 
-The repository is also a learning project.
+After changes:
+1. Run relevant tests.
+2. Run ./mvnw package when appropriate.
+3. Fix compilation and test failures caused by the change.
+4. Report modified files and verification results.
+5. Do not implement unrelated future features.
 
-When implementing a Spring Boot feature, explain important concepts such as:
+Prioritize:
+- correctness
+- simplicity
+- maintainability
+- minimal changes
+- passing builds
 
-- `@Controller`
-- `@Service`
-- `@Repository`
-- `@Entity`
-- `@Id`
-- `@GeneratedValue`
-- `JpaRepository`
-- constructor injection
-- `Model`
-- Thymeleaf form binding
-- validation
-- request mappings
-- JPA persistence
-
-Do not merely generate code when an explanation would help understanding.
-
----
-
-## Interview Preparation
-
-When asked to explain code, use the actual classes and request flow from this repository.
-
-Prefer explanations in this form:
-
-```text
-Browser
-   ->
-Controller
-   ->
-Service
-   ->
-Repository
-   ->
-Database
-```
-
-For AI:
-
-```text
-TaskService
-   ->
-AiService
-   ->
-AI Model
-```
-
-Explain code at fresher interview level unless deeper detail is requested.
-
----
+Do not provide educational explanations unless explicitly requested.
 
 ## Scope Restrictions
 

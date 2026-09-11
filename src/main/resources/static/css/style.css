@@ -1,0 +1,55 @@
+body {
+	min-height: 100vh;
+	background: #f4f7fb;
+	color: #1f2937;
+}
+
+.page-container {
+	max-width: 1200px;
+}
+
+.page-content {
+	padding-top: 2.5rem;
+	padding-bottom: 3rem;
+}
+
+.page-title {
+	font-size: clamp(1.75rem, 4vw, 2.25rem);
+	font-weight: 700;
+}
+
+.content-card {
+	border: 0;
+	border-radius: 0.75rem;
+	box-shadow: 0 0.25rem 1.25rem rgba(15, 23, 42, 0.08);
+}
+
+.table th,
+.table td {
+	padding: 1rem;
+}
+
+.badge {
+	font-weight: 600;
+	letter-spacing: 0.02em;
+}
+
+.actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.actions form {
+	margin: 0;
+}
+
+.detail-list dt,
+.detail-list dd {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.task-description {
+	white-space: pre-wrap;
+}
