@@ -2,6 +2,8 @@ package com.smarttask.smarttask_ai.service;
 
 import java.util.Locale;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.stereotype.Service;
 
@@ -9,6 +11,8 @@ import com.smarttask.smarttask_ai.dto.TaskAiResult;
 
 @Service
 public class AiService {
+
+	private static final Logger logger = LoggerFactory.getLogger(AiService.class);
 
 	private static final TaskAiResult FALLBACK_RESULT =
 			new TaskAiResult("General", "MEDIUM", "AI analysis unavailable");
@@ -40,8 +44,20 @@ public class AiService {
 			return normalize(result);
 		}
 		catch (Exception exception) {
+			Throwable rootCause = rootCause(exception);
+			logger.warn("Gemini task analysis failed; using fallback values ({}): {}",
+					rootCause.getClass().getSimpleName(), rootCause.getMessage());
+			logger.debug("Gemini task analysis failure", exception);
 			return FALLBACK_RESULT;
 		}
+	}
+
+	private Throwable rootCause(Throwable throwable) {
+		Throwable result = throwable;
+		while (result.getCause() != null && result.getCause() != result) {
+			result = result.getCause();
+		}
+		return result;
 	}
 
 	private TaskAiResult normalize(TaskAiResult result) {

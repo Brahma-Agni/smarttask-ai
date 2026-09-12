@@ -1,0 +1,63 @@
+                                                          HARSHAL V T
+                               Generative AI • Agentic Systems • Automation • Java / Spring Boot
+             +91 81482 04189 | mahatharanee.hvt@gmail.com | linkedin.com/in/h-vt | github.com/Brahma-Agni | Chennai, India
+
+ ABOUT ME
+ Generative AI and backend engineer who builds production-oriented retrieval-augmented generation (RAG) applications, agentic workflows and
+ AI-integrated automation. Works across the full path from retrieval pipeline to deployed REST service - Gemini, LangChain, Sentence
+ Transformers and FAISS on the AI side; Java, Spring Boot, Spring AI and Spring Security on the backend. Two industry internships in AI-
+ backend integration and graph data modelling, where ETL automation cut manual processing by 40% and lifted pipeline efficiency by 30%.
+ Pursuing a B.S. in Data Science at IIT Madras alongside a B.Tech in IT; seeking a Generative AI / Backend Engineer role.
+
+ TECHNICAL SKILLS
+ Generative AI & RAG: Google Gemini, Gemini Vision, LangChain, Spring AI, Sentence Transformers, FAISS, prompt engineering, structured
+ JSON prompting
+ Agentic AI & Automation: Agentic workflow design, AI workflow orchestration, ETL automation, data ingestion and preprocessing, shell
+ scripting
+ Backend & APIs: Java, Spring Boot, Spring MVC, Spring Security, Spring Data JPA / Hibernate, FastAPI, REST APIs, JWT, Maven
+ Data & Databases: SQL, MySQL, Neo4j (Cypher), Snowflake schema design, graph data modelling
+ Cloud, Tools & Languages: AWS, Docker, Git, Linux, Streamlit, ReportLab; Java, Python(basic), SQL, Shell
+
+ WORK EXPERIENCE
+                                                                                                                                           Jul 2025 - Nov
+ AI Engineering Intern - L&B GenAI KrishTech, Chennai
+                                                                                                                                                     2025
+ Credit Risk Score Analysis System
+ • Automated ETL workflows with shell scripts, reducing repetitive manual processing effort by 40%.
+ • Automated backend data-ingestion and preprocessing pipelines, improving workflow efficiency by 30%.
+ • Integrated backend services with AI modules supporting borrower risk evaluation.
+ • Collaborated with AI and backend teams on deployment workflows, Linux automation and Git-based development.
+ Technical Skills Applied: Java, Shell scripting, Linux, ETL automation, REST integration, Git
+                                                                                                                                           May 2025 - Jul
+ Data Specialist Intern - Quadruple Automation Services Pvt. Ltd., Chennai
+                                                                                                                                                   2025
+ • Designed HIPAA-compliant healthcare data models using the Neo4j graph database.
+ • Developed Snowflake schemas and improved graph-query performance by approximately 35%.
+ • Contributed to graph-based recommendation research, improving relationship-based retrieval by ~20%.
+ Technical Skills Applied: Neo4j, Cypher, Snowflake schema design, SQL, data modelling
+
+ PROJECTS
+Cross Speak AI - bidirectional Corporate English ↔ Gen Z translator                                                                    GitHub | Live App
+ • Built and deployed a grounded RAG pipeline over a curated knowledge base of 50+ term pairs, served live through Streamlit.
+ • Implemented heuristic style detection, top-k FAISS retrieval, structured JSON prompting and automatic failover across up to five Gemini API keys for
+    uninterrupted uptime.
+ Technical Skills Applied: Gemini, LangChain, FAISS, Sentence Transformers, Streamlit, Python
+AI Error Diagnosis System - multimodal RAG for root-cause analysis                                                                                  GitHub
+ • Engineered a multimodal RAG application that extracts structured error details from screenshots, retrieves similar historical issues and generates root-
+   cause diagnoses with step-by-step fixes.
+ • Designed REST endpoints, upload validation, top-5 semantic retrieval, confidence-scored recommendations and downloadable PDF reports.
+ Technical Skills Applied: Gemini Vision, FastAPI, FAISS, Sentence Transformers, ReportLab, Python
+ Secure Authentication Service - production-style auth backend
+ • Built REST APIs for JWT authentication, OTP verification and password reset, with persistence through Spring Data JPA / Hibernate and the service
+   containerised with Docker.
+ Technical Skills Applied: Java, Spring Boot, Spring Security, JWT, MySQL, Docker, Maven
+
+ EDUCATION
+B.Tech. in Information Technology - Prince Shri Venkateshwara Padmavathy Engineering College (8.3 CGPA)                                           Ongoing
+B.S. in Data Science - Indian Institute of Technology Madras                                                                      CGPA 7.5 / 10 | Ongoing
+
+ CERTIFICATIONS
+ Oracle Data Platform Foundation Associate | Neo4j Professional (Neo4j Graph Academy) | Vertex AI Prompt Design (Google Cloud) | AWS Cloud
+ Practitioner (Udemy) | Cisco Data Analytics (Cisco Academy) | Microsoft Fabric DP-700 Ignite Challenge | Hadoop 101 (IBM) | Simplifying Data Pipelines
+ with Kafka (IBM)
+

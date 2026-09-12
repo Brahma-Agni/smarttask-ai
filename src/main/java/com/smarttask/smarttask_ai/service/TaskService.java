@@ -1,5 +1,6 @@
 package com.smarttask.smarttask_ai.service;
 
+import java.util.Comparator;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -20,7 +21,22 @@ public class TaskService {
 	}
 
 	public List<Task> getAllTasks() {
-		return taskRepository.findAll();
+		return taskRepository.findAll().stream()
+				.sorted(Comparator.comparingInt(this::priorityRank))
+				.toList();
+	}
+
+	private int priorityRank(Task task) {
+		if ("HIGH".equalsIgnoreCase(task.getPriority())) {
+			return 0;
+		}
+		if ("MEDIUM".equalsIgnoreCase(task.getPriority())) {
+			return 1;
+		}
+		if ("LOW".equalsIgnoreCase(task.getPriority())) {
+			return 2;
+		}
+		return 3;
 	}
 
 	public Task getTaskById(Long id) {

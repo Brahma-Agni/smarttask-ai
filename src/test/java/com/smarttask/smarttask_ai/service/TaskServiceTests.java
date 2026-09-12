@@ -6,6 +6,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.junit.jupiter.api.Test;
@@ -19,6 +20,16 @@ class TaskServiceTests {
 	private final TaskRepository taskRepository = mock(TaskRepository.class);
 	private final AiService aiService = mock(AiService.class);
 	private final TaskService taskService = new TaskService(taskRepository, aiService);
+
+	@Test
+	void returnsTasksOrderedByPriority() {
+		Task low = taskWithPriority("LOW");
+		Task high = taskWithPriority("HIGH");
+		Task medium = taskWithPriority("MEDIUM");
+		when(taskRepository.findAll()).thenReturn(List.of(low, high, medium));
+
+		assertEquals(List.of(high, medium, low), taskService.getAllTasks());
+	}
 
 	@Test
 	void returnsDashboardCounts() {
@@ -110,5 +121,11 @@ class TaskServiceTests {
 
 		verify(taskRepository).save(task);
 		assertEquals("COMPLETED", completedTask.getStatus());
+	}
+
+	private Task taskWithPriority(String priority) {
+		Task task = new Task();
+		task.setPriority(priority);
+		return task;
 	}
 }

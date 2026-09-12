@@ -76,7 +76,7 @@ status   = OPEN
 | Persistence | Spring Data JPA, Hibernate |
 | Runtime database | MySQL 8.4 |
 | Test database | H2 |
-| AI | Spring AI 2.0.1, Google Gemini `gemini-2.5-flash` |
+| AI | Spring AI 2.0.1, Google Gemini `gemini-3.6-flash` |
 | Validation | Jakarta Validation |
 | Security | Spring Security dependency with default development authentication |
 | Build | Maven Wrapper |
